@@ -1,0 +1,35 @@
+@import "reset";
+@import "fonts";
+@import "variables";
+@import "header";
+@import "notifications";
+@import "catalog";
+@import "footer";
+
+* {
+  border: none;
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+  background: $background-grey;
+  display: flex;
+  flex-direction: column;
+}
+
+.unselectable {
+  -webkit-user-select: none; /* для WebKit (Chrome, Safari) */
+  -moz-user-select: none; /* для Mozilla Firefox */
+  -ms-user-select: none; /* для Internet Explorer/Edge */
+  user-select: none; /* стандартное свойство */
+}
+
+.unselectable-img {
+  -webkit-user-drag: none; /* Отключение перетаскивания для WebKit (Chrome, Safari) */
+  -webkit-user-select: none; /* Отключение выделения для WebKit (Chrome, Safari) */
+  -moz-user-select: none; /* Отключение выделения для Mozilla Firefox */
+  -ms-user-select: none; /* Отключение выделения для Internet Explorer/Edge */
+  user-select: none; /* Стандартное свойство для отключения выделения */
+}

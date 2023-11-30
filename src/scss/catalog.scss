@@ -1,0 +1,232 @@
+.products-wrapper {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.products {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 1112px;
+  padding: 44px 20px 100px 20px;
+}
+
+.products-headline {
+  margin-bottom: 36px;
+  font-family: Inter;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.products-catalogue {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.products-catalogue-filter {
+  width: 242px;
+  display: block;
+}
+
+.products-catalogue-filter__summary {
+  display: block;
+  font-family: ProximaNova;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 32px;
+  margin-bottom: 15px;
+}
+
+.products-catalogue-filter__divider {
+  display: block;
+  width: 100%;
+  height: 0px;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid;
+  border-bottom: 0;
+  border-top-color: $surface-stroke;
+}
+
+.products-catalogue-filter__left {
+  color: $on-surface-secondary-text;
+  font-family: IBMPlexSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-top: 12px;
+}
+
+.products-catalogue-filter-list-item {
+  padding: 12px;
+}
+
+.products-catalogue-filter-list-item.active {
+  border-radius: 12px;
+  background: $buttons-secondary-hover;
+}
+
+.products-catalogue-filter-list-item:hover {
+  border-radius: 12px;
+  background: $buttons-secondary-hover;
+}
+
+.products-catalogue-filter-list-item__link {
+  text-decoration: none;
+  display: block;
+  color: $on-surface-secondary-text;
+}
+
+.products-catalogue-wrapper {
+  max-width: 830px;
+  display: flex;
+  gap: 16px;
+}
+
+.products-catalogue-list {
+  max-width: 830px;
+  display: flex;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  width: 100%;
+  gap: 16px;
+}
+
+.products-list-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 234px;
+  height: 318px;
+  padding: 16px;
+  border-radius: 8px;
+  background: $background-white;
+  box-shadow: 0px 0px 1px 0px rgba(26, 32, 35, 0.32), 0px 4px 8px 0px rgba(91, 104, 113, 0.24);
+}
+
+.products-list-item-top__logo {
+  display: block;
+  height: 40px;
+  width: 202px;
+  padding-bottom: 16px;
+}
+
+.products-list-item-top__logo img {
+  max-height: 40px;
+  max-width: 202px;
+}
+
+.products-list-item-top__label {
+  color: $text-gray;
+  font-family: IBMPlexSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding-bottom: 4px;
+  width: 230px; 
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.products-list-item-top__title {
+  color: $on-surface-primary-text;
+  font-family: IBMPlexSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  padding-bottom: 8px;
+}
+
+.products-list-item__description {
+  color: $text-gray;
+  font-family: IBMPlexSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding-bottom: 16px;
+  min-height: 16px;
+}
+
+.products-list-item__price-label {
+  color: $text-gray;
+  font-family: IBMPlexSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  padding-bottom: 2px;
+}
+
+.products-list-item__price-value {
+  padding-bottom: 12px;
+}
+
+.products-list-item__price-value-price {
+  color: $notifications-text;
+  font-family: IBMPlexSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.products-list-item__price-value-period {
+  color: $notifications-text;
+  font-family: IBMPlexSans;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.products-list-item__try,
+.products-list-item__buy {
+  width: 234px;
+  height: 48px;
+  border-radius: 8px;
+  border: 0;
+  background: #0B408B;
+  color: $background-white;
+  text-align: center;
+  font-family: IBMPlexSans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+}
+
+.products-list-item__try:hover,
+.products-list-item__buy:hover {
+  background: #09326b;
+}
+
+
+@media (max-width: 1024px) {
+  .products {
+    width: auto;
+  }
+
+  .products-catalogue-filter {
+    display: none;
+  }
+
+  .products-list {
+    justify-content: center;
+  }
+}
